@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IntegerExtensions.cs" />
+    <Compile Include="MaxContiguousSum.cs" />
     <Compile Include="OutwardCounterclockwiseSpiralMatrixTraversal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

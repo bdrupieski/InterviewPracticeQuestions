@@ -5,8 +5,6 @@ using NUnit.Framework;
 namespace CodingForInterviews
 {
     /// <summary>
-    /// http://us2.campaign-archive1.com/?u=cadc6c448cd083a0aeed7f864&id=a6856ac71e&e=078537ead7
-    /// 
     /// Write a function that accepts four arguments. 
     /// 
     /// The first two arguments are the size of the grid (h x w), 
@@ -137,14 +135,14 @@ namespace CodingForInterviews
         public class Tests
         {
             [Test]
-            public void TestsFromWebsiteSmall()
+            public void Small()
             {
                 var small = Spiral(2, 4, 1, 2);
                 Assert.AreEqual(small, new[] { 2, 1, 5, 6, 7, 3, 8, 4 });
             }
 
             [Test]
-            public void TestFromWebsiteBig()
+            public void Big()
             {
                 var bigger = Spiral(5, 5, 3, 3);
                 Assert.AreEqual(bigger, new[] { 13, 8, 7, 12, 17, 18, 19, 14, 9, 4, 3, 2, 1, 6, 11, 16, 21, 22, 23, 24, 25, 20, 15, 10, 5 });
