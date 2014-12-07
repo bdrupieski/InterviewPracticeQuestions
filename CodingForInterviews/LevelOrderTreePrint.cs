@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using NUnit.Framework;
 
 namespace CodingForInterviews
@@ -11,14 +12,17 @@ namespace CodingForInterviews
     /// </summary>
     public class LevelOrderTreePrint
     {
-        public static void PrintTreeInLevelOrder<T>(BinaryTree<T> tree) where T : IComparable<T>
+        public static string TreeInLevelOrder<T>(BinaryTree<T> tree) where T : IComparable<T>
         {
-            var welp = GetLevelOrderTreeLayers(tree);
+            var sb = new StringBuilder();
 
-            foreach (var nodes in welp)
+            var nodeLayers = GetLevelOrderTreeLayers(tree);
+            foreach (var nodeLayer in nodeLayers)
             {
-                Console.WriteLine(string.Join(" ", nodes.Select(x => x.Data)));
+                sb.AppendLine(string.Join(" ", nodeLayer.Select(x => x.Data)));
             }
+
+            return sb.ToString();
         }
 
         private static List<List<BinaryTree<T>.Node<T>>> GetLevelOrderTreeLayers<T>(BinaryTree<T> tree) where T : IComparable<T>
@@ -74,7 +78,14 @@ namespace CodingForInterviews
                 tree.Insert(7);
                 tree.Insert(6);
 
-                PrintTreeInLevelOrder(tree);
+                string actualTree = TreeInLevelOrder(tree);
+                Console.WriteLine(actualTree);
+
+                string expectedTree =
+                    "5" + Environment.NewLine +
+                    "2 7" + Environment.NewLine +
+                    "3 6" + Environment.NewLine + Environment.NewLine;
+                Assert.AreEqual(expectedTree, actualTree);
             }
 
             [Test]
@@ -93,8 +104,17 @@ namespace CodingForInterviews
                 tree.Insert(3);
                 tree.Insert(2);
                 tree.Insert(1);
-                
-                PrintTreeInLevelOrder(tree);
+
+                string actualTree = TreeInLevelOrder(tree);
+                Console.WriteLine(actualTree);
+
+                string expectedTree =
+                    "5" + Environment.NewLine +
+                    "4 6" + Environment.NewLine +
+                    "3 7" + Environment.NewLine +
+                    "2 8" + Environment.NewLine +
+                    "1 9" + Environment.NewLine + Environment.NewLine;
+                Assert.AreEqual(expectedTree, actualTree);
             }
 
             [Test]
@@ -111,7 +131,15 @@ namespace CodingForInterviews
                 tree.Insert(19);
                 tree.Insert(29);
 
-                PrintTreeInLevelOrder(tree);
+                string actualTree = TreeInLevelOrder(tree);
+                Console.WriteLine(actualTree);
+
+                string expectedTree =
+                    "10" + Environment.NewLine +
+                    "8 18" + Environment.NewLine +
+                    "16 19" + Environment.NewLine +
+                    "29" + Environment.NewLine + Environment.NewLine;
+                Assert.AreEqual(expectedTree, actualTree);
             }
         }
     }
