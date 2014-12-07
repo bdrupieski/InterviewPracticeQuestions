@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BitSetBitGet.cs" />
     <Compile Include="IntegerExtensions.cs" />
     <Compile Include="LevelOrderTreePrint.cs" />
     <Compile Include="MaxContiguousSum.cs" />
