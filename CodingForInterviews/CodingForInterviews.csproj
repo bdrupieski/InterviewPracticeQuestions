@@ -52,6 +52,7 @@
     <Compile Include="OutwardCounterclockwiseSpiralMatrixTraversal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StackExtensions.cs" />
+    <Compile Include="Staqueue.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
