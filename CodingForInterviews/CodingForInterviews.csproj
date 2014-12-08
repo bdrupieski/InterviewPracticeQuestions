@@ -42,13 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BalancedDelimiters.cs" />
     <Compile Include="BitSetBitGet.cs" />
+    <Compile Include="EnumerableExtensions.cs" />
     <Compile Include="IntegerExtensions.cs" />
     <Compile Include="LevelOrderTreePrint.cs" />
     <Compile Include="MaxContiguousSum.cs" />
     <Compile Include="NQueens.cs" />
     <Compile Include="OutwardCounterclockwiseSpiralMatrixTraversal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StackExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
