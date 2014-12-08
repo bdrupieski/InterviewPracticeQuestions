@@ -4,6 +4,15 @@ using NUnit.Framework;
 
 namespace CodingForInterviews
 {
+    /// <summary>
+    /// For this question, you will parse a string to determine if it contains only "balanced delimiters."
+    /// 
+    /// A balanced delimiter starts with an opening character ((, [, {), 
+    /// ends with a matching closing character (), ], } respectively), 
+    /// and has only other matching delimiters in between. 
+    /// 
+    /// A balanced delimiter may contain any number of balanced delimiters.
+    /// </summary>
     public class BalancedDelimiters
     {
         public static List<Delimiter> Delimiters = new List<Delimiter>
