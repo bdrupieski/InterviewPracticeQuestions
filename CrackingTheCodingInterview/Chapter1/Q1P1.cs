@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using NUnit.Framework;
@@ -66,7 +64,7 @@ namespace CrackingTheCodingInterview.Chapter1
         public class Q1P1Tests
         {
             [Test]
-            public void TestQ1P1()
+            public void UniqueStringTest()
             {
                 foreach (var m in typeof(Q1P1).PublicStaticMethods())
                 {
@@ -85,35 +83,21 @@ namespace CrackingTheCodingInterview.Chapter1
             [Ignore]
             public void TestQ1P1Performance1()
             {
-                PerformanceTestWithInput("abcdefghijklmnopqrstuvwxyz");
+                PerformanceHelper.PerformanceTestPublicStaticMethods<Q1P1>("abcdefghijklmnopqrstuvwxyz");
             }
 
             [Test]
             [Ignore]
             public void TestQ1P1Performance2()
             {
-                PerformanceTestWithInput("asdflkjhalsdkjfhsdlfkgjdfkljghklj5iw5g78054hg8o7h45gh8754h");
+                PerformanceHelper.PerformanceTestPublicStaticMethods<Q1P1>("asdflkjhalsdkjfhsdlfkgjdfkljghklj5iw5g78054hg8o7h45gh8754h");
             }
 
             [Test]
             [Ignore]
             public void TestQ1P1Performance3()
             {
-                PerformanceTestWithInput("12345");
-            }
-
-            public static void PerformanceTestWithInput(string s)
-            {
-                foreach (var m in typeof(Q1P1).PublicStaticMethods())
-                {
-                    var sw = Stopwatch.StartNew();
-                    for (int i = 0; i < 1000000; i++)
-                    {
-                        m.HasAllUniqueCharacters(s);
-                    }
-                    sw.Stop();
-                    Console.WriteLine("{0} ms for {1}", sw.ElapsedMilliseconds, m);
-                }
+                PerformanceHelper.PerformanceTestPublicStaticMethods<Q1P1>("12345");
             }
         }
     }
