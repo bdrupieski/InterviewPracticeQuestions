@@ -51,7 +51,7 @@ namespace CrackingTheCodingInterview.Chapter1
         }
 
         [TestFixture]
-        public class Question1P7Tests
+        public class Q1P7Tests
         {
             [Test]
             public void ZeroOutRowsAndColumnsWithZeroTest()

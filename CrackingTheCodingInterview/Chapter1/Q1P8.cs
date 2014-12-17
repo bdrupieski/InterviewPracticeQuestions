@@ -25,7 +25,7 @@ namespace CrackingTheCodingInterview.Chapter1
         }
 
         [TestFixture]
-        public class Question1P8Tests
+        public class Q1P8Tests
         {
             [Test]
             public void IsRotatedTest()

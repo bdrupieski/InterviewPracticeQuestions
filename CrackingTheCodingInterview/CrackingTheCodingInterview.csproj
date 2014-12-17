@@ -52,6 +52,8 @@
     <Compile Include="Chapter1\Q1P6.cs" />
     <Compile Include="Chapter1\Q1P7.cs" />
     <Compile Include="Chapter1\Q1P8.cs" />
+    <Compile Include="Chapter2\Node.cs" />
+    <Compile Include="Chapter2\Q2P1.cs" />
     <Compile Include="DictionaryEqualityComparer.cs" />
     <Compile Include="PerformanceHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
