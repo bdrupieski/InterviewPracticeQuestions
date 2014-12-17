@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Chapter1\Q1P1.cs" />
     <Compile Include="Chapter1\Q1P3.cs" />
+    <Compile Include="Chapter1\Q1P4.cs" />
     <Compile Include="DictionaryEqualityComparer.cs" />
     <Compile Include="PerformanceHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
