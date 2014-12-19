@@ -132,7 +132,7 @@ namespace CodingForInterviews
         }
 
         [TestFixture]
-        public class Tests
+        public class OutwardCounterclockwiseSpiralMatrixTraversalTests
         {
             [Test]
             public void Small()

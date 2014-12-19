@@ -85,7 +85,7 @@ namespace CodingForInterviews
         }
 
         [TestFixture]
-        public class Tests
+        public class BalancedDelimitersTests
         {
             [Test]
             public void TestIsBalanced()

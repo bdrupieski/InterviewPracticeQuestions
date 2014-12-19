@@ -27,7 +27,7 @@ namespace CodingForInterviews
         }
 
         [TestFixture]
-        public class Tests
+        public class MaxContiguousSumTests
         {
             [Test]
             public void Simple()

@@ -5,7 +5,7 @@ using NUnit.Framework;
 
 namespace CrackingTheCodingInterview.Chapter2
 {
-    public class Q2P1
+    public class Q2P1LinkedListRemoveDuplicates
     {
         public static void RemoveDuplicates<T>(Node<T> head) where T : IEquatable<T>
         {
@@ -56,12 +56,12 @@ namespace CrackingTheCodingInterview.Chapter2
         }
 
         [TestFixture]
-        public class Q2P1Tests
+        public class Q2P1LinkedListRemoveDuplicatesTests
         {
             [Test]
             public void RemoveDuplicatesTest()
             {
-                foreach (var m in typeof(Q2P1).PublicStaticMethods())
+                foreach (var m in typeof(Q2P1LinkedListRemoveDuplicates).PublicStaticMethods())
                 {
                     var head = new Node<int>(1);
                     head.Append(2);
@@ -82,7 +82,7 @@ namespace CrackingTheCodingInterview.Chapter2
             [Test]
             public void RemoveDuplicatesTest2()
             {
-                foreach (var m in typeof(Q2P1).PublicStaticMethods())
+                foreach (var m in typeof(Q2P1LinkedListRemoveDuplicates).PublicStaticMethods())
                 {
                     var head = new Node<int>(1);
                     head.Append(1);
@@ -99,7 +99,7 @@ namespace CrackingTheCodingInterview.Chapter2
             [Test]
             public void RemoveDuplicatesTest3()
             {
-                foreach (var m in typeof(Q2P1).PublicStaticMethods())
+                foreach (var m in typeof(Q2P1LinkedListRemoveDuplicates).PublicStaticMethods())
                 {
                     var head = new Node<int>(1);
                     head.Append(2);
@@ -121,7 +121,7 @@ namespace CrackingTheCodingInterview.Chapter2
         }
     }
 
-    public static class Q2P1Extensions
+    public static class Q2P1LinkedListRemoveDuplicatesMethodInfoExtensions
     {
         public static void RemoveDuplicates<T>(this MethodInfo m, Node<T> head) where T : IEquatable<T>
         {

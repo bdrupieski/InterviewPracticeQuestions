@@ -8,7 +8,7 @@ namespace CrackingTheCodingInterview.Chapter1
     /// <summary>
     /// Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
     /// </summary>
-    public class Q1P1
+    public class Q1P1UniqueCharactersInString
     {
         public static bool HasAllUniqueCharacters_Linq(string s)
         {
@@ -61,12 +61,12 @@ namespace CrackingTheCodingInterview.Chapter1
         }
 
         [TestFixture]
-        public class Q1P1Tests
+        public class Q1P1UniqueCharactersInStringTests
         {
             [Test]
             public void UniqueStringTest()
             {
-                foreach (var m in typeof(Q1P1).PublicStaticMethods())
+                foreach (var m in typeof(Q1P1UniqueCharactersInString).PublicStaticMethods())
                 {
                     Assert.True(m.HasAllUniqueCharacters(""));
                     Assert.True(m.HasAllUniqueCharacters("a"));
@@ -81,28 +81,28 @@ namespace CrackingTheCodingInterview.Chapter1
 
             [Test]
             [Ignore]
-            public void TestQ1P1Performance1()
+            public void TestQ1P1UniqueCharactersInStringPerformance1()
             {
-                PerformanceHelper.PerformanceTestPublicStaticMethods<Q1P1>("abcdefghijklmnopqrstuvwxyz");
+                PerformanceHelper.PerformanceTestPublicStaticMethods<Q1P1UniqueCharactersInString>("abcdefghijklmnopqrstuvwxyz");
             }
 
             [Test]
             [Ignore]
-            public void TestQ1P1Performance2()
+            public void TestQ1P1UniqueCharactersInStringPerformance2()
             {
-                PerformanceHelper.PerformanceTestPublicStaticMethods<Q1P1>("asdflkjhalsdkjfhsdlfkgjdfkljghklj5iw5g78054hg8o7h45gh8754h");
+                PerformanceHelper.PerformanceTestPublicStaticMethods<Q1P1UniqueCharactersInString>("asdflkjhalsdkjfhsdlfkgjdfkljghklj5iw5g78054hg8o7h45gh8754h");
             }
 
             [Test]
             [Ignore]
-            public void TestQ1P1Performance3()
+            public void TestQ1P1UniqueCharactersInStringPerformance3()
             {
-                PerformanceHelper.PerformanceTestPublicStaticMethods<Q1P1>("12345");
+                PerformanceHelper.PerformanceTestPublicStaticMethods<Q1P1UniqueCharactersInString>("12345");
             }
         }
     }
 
-    public static class Q1P1Extensions
+    public static class Q1P1UniqueCharactersInStringMethodInfoExtensions
     {
         public static bool HasAllUniqueCharacters(this MethodInfo m, string s)
         {

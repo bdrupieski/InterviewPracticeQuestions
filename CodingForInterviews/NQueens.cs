@@ -57,7 +57,7 @@ namespace CodingForInterviews
         }
 
         [TestFixture]
-        public class Tests
+        public class NQueensTests
         {
             [Test]
             public void EightQueens()

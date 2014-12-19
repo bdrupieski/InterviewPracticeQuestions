@@ -65,7 +65,7 @@ namespace CodingForInterviews
         }
 
         [TestFixture]
-        public class Tests
+        public class LevelOrderTreePrintTests
         {
             [Test]
             public void SmallTree()

@@ -14,7 +14,7 @@ namespace CrackingTheCodingInterview.Chapter1
     /// Input: "Mr John Smith    " 
     /// Output: "Mr%20John%20Smith"
     /// </summary>
-    public class Q1P4
+    public class Q1P4InsertPercentTwenty
     {
         static readonly char[] SpaceSeparator = { ' ' };
         const string Percent20 = "%20";
@@ -56,12 +56,12 @@ namespace CrackingTheCodingInterview.Chapter1
         }
 
         [TestFixture]
-        public class Q1P4Tests
+        public class Q1P4InsertPercentTwentyTests
         {
             [Test]
             public void InsertPercent20Test()
             {
-                foreach (var m in typeof(Q1P4).PublicStaticMethods())
+                foreach (var m in typeof(Q1P4InsertPercentTwenty).PublicStaticMethods())
                 {
                     Console.WriteLine("Testing {0}", m);
                     Assert.That(m.Insert20Percent("Mr John Smith    ", 13) == "Mr%20John%20Smith");
@@ -73,14 +73,14 @@ namespace CrackingTheCodingInterview.Chapter1
 
             [Test]
             [Ignore]
-            public void TestQ1P4Performance1()
+            public void TestQ1P4InsertPercentTwentyPerformance1()
             {
-                PerformanceHelper.PerformanceTestPublicStaticMethods<Q1P4>("hello how are you      ", 13);
+                PerformanceHelper.PerformanceTestPublicStaticMethods<Q1P4InsertPercentTwenty>("hello how are you      ", 13);
             }
         }
     }
 
-    public static class Question1P4MethodInfoExtensions
+    public static class Q1P4InsertPercentTwentyMethodInfoExtensions
     {
         public static string Insert20Percent(this MethodInfo m, string s, int length)
         {

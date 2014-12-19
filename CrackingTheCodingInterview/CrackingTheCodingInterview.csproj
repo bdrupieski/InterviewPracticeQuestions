@@ -45,15 +45,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chapter1\Q1P1.cs" />
-    <Compile Include="Chapter1\Q1P3.cs" />
-    <Compile Include="Chapter1\Q1P4.cs" />
-    <Compile Include="Chapter1\Q1P5.cs" />
-    <Compile Include="Chapter1\Q1P6.cs" />
-    <Compile Include="Chapter1\Q1P7.cs" />
-    <Compile Include="Chapter1\Q1P8.cs" />
+    <Compile Include="Chapter1\Q1P1UniqueCharactersInString.cs" />
+    <Compile Include="Chapter1\Q1P3StringPermutation.cs" />
+    <Compile Include="Chapter1\Q1P4InsertPercentTwenty.cs" />
+    <Compile Include="Chapter1\Q1P5RunLengthEncoding.cs" />
+    <Compile Include="Chapter1\Q1P6RotateMatrix.cs" />
+    <Compile Include="Chapter1\Q1P7ZeroOutMatrix.cs" />
+    <Compile Include="Chapter1\Q1P8RotatedString.cs" />
     <Compile Include="Chapter2\Node.cs" />
-    <Compile Include="Chapter2\Q2P1.cs" />
+    <Compile Include="Chapter2\Q2P1LinkedListRemoveDuplicates.cs" />
     <Compile Include="DictionaryEqualityComparer.cs" />
     <Compile Include="PerformanceHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

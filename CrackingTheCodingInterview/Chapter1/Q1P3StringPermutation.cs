@@ -9,7 +9,7 @@ namespace CrackingTheCodingInterview.Chapter1
     /// <summary>
     /// Given two strings, write a method to determine if one is a permutation of the other.
     /// </summary>
-    public class Q1P3
+    public class Q1P3StringPermutation
     {
         public static bool ArePermutations_Sorting(string a, string b)
         {
@@ -71,12 +71,12 @@ namespace CrackingTheCodingInterview.Chapter1
         }
 
         [TestFixture]
-        public class Q1P3Tests
+        public class Q1P3StringPermutationTests
         {
             [Test]
             public void PermutationsTest()
             {
-                foreach (var m in typeof(Q1P3).PublicStaticMethods())
+                foreach (var m in typeof(Q1P3StringPermutation).PublicStaticMethods())
                 {
                     Assert.True(m.ArePermutations("", ""));
                     Assert.True(m.ArePermutations("a", "a"));
@@ -101,23 +101,23 @@ namespace CrackingTheCodingInterview.Chapter1
 
             [Test]
             [Ignore]
-            public void TestQ1P3Performance1()
+            public void TestQ1P3StringPermutationPerformance1()
             {
-                PerformanceHelper.PerformanceTestPublicStaticMethods<Q1P3>("abcccc", "ccccba");
+                PerformanceHelper.PerformanceTestPublicStaticMethods<Q1P3StringPermutation>("abcccc", "ccccba");
             }
 
             [Test]
             [Ignore]
-            public void TestQ1P3Performance2()
+            public void TestQ1P3StringPermutationPerformance2()
             {
-                PerformanceHelper.PerformanceTestPublicStaticMethods<Q1P3>(
+                PerformanceHelper.PerformanceTestPublicStaticMethods<Q1P3StringPermutation>(
                     "abccccabccccabccccabccccabccccabccccabccccabcccc", 
                     "ccccbaccccbaccccbaccccbaccccbaccccbaccccbaccccba");
             }
         }
     }
 
-    public static class Question1P3MethodInfoExtensions
+    public static class Q1P3StringPermutationMethodInfoExtensions
     {
         public static bool ArePermutations(this MethodInfo m, string a, string b)
         {

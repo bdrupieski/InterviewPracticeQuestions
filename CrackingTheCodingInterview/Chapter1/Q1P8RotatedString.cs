@@ -8,7 +8,7 @@ namespace CrackingTheCodingInterview.Chapter1
     /// of s1 using only one call to isSubstring.
     /// (i.e., “waterbottle” is a rotation of “erbottlewat”)
     /// </summary>
-    public class Q1P8
+    public class Q1P8RotatedString
     {
         public static bool IsRotated(string maybeRotated, string s)
         {
@@ -25,7 +25,7 @@ namespace CrackingTheCodingInterview.Chapter1
         }
 
         [TestFixture]
-        public class Q1P8Tests
+        public class Q1P8RotatedStringTests
         {
             [Test]
             public void IsRotatedTest()

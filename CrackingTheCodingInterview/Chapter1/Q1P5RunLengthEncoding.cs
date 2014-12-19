@@ -13,7 +13,7 @@ namespace CrackingTheCodingInterview.Chapter1
     /// For example, the string aabcccccaaa would become a2b1c5a3. If the "compressed" string 
     /// would not become smaller than the original string, your method should return the original string.
     /// </summary>
-    public class Q1P5
+    public class Q1P5RunLengthEncoding
     {
         public static string RunLengthEncoding_MoreLinqGroupAdjacent(string s)
         {
@@ -86,12 +86,12 @@ namespace CrackingTheCodingInterview.Chapter1
         }
 
         [TestFixture]
-        public class Q1P5Tests
+        public class Q1P5RunLengthEncodingTests
         {
             [Test]
             public void RunLengthEncodingTest()
             {
-                foreach (var m in typeof(Q1P5).PublicStaticMethods())
+                foreach (var m in typeof(Q1P5RunLengthEncoding).PublicStaticMethods())
                 {
                     Console.WriteLine("Testing {0}", m);
                     Assert.That(m.RunLengthEncoding("") == "");
@@ -107,14 +107,14 @@ namespace CrackingTheCodingInterview.Chapter1
 
             [Test]
             [Ignore]
-            public void TestQ1P5Performance1()
+            public void TestQ1P5RunLengthEncodingPerformance()
             {
-                PerformanceHelper.PerformanceTestPublicStaticMethods<Q1P5>("aabbccddeeff");
+                PerformanceHelper.PerformanceTestPublicStaticMethods<Q1P5RunLengthEncoding>("aabbccddeeff");
             }
         }
     }
 
-    public static class Question1P5MethodInfoExtensions
+    public static class Q1P5RunLengthEncodingMethodInfoExtensions
     {
         public static string RunLengthEncoding(this MethodInfo m, string s)
         {

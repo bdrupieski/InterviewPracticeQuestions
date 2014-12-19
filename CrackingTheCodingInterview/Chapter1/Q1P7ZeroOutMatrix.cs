@@ -5,7 +5,7 @@ namespace CrackingTheCodingInterview.Chapter1
     /// <summary>
     /// Write an algorithm such that if an element in an MxN matrix is 0, its entire row and column is set to 0.
     /// </summary>
-    public class Q1P7
+    public class Q1P7ZeroOutMatrix
     {
         public static void SetRowsAndColsToZero(int[][] matrix)
         {
@@ -51,7 +51,7 @@ namespace CrackingTheCodingInterview.Chapter1
         }
 
         [TestFixture]
-        public class Q1P7Tests
+        public class Q1P7ZeroOutMatrixTests
         {
             [Test]
             public void ZeroOutRowsAndColumnsWithZeroTest()

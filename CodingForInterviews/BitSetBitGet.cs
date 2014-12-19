@@ -47,7 +47,7 @@ namespace CodingForInterviews
         }
 
         [TestFixture]
-        public class Tests
+        public class BitSetBitGetTests
         {
             [Test]
             public void TestGetBit()
