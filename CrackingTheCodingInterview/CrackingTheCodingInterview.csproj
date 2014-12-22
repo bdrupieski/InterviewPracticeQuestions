@@ -55,6 +55,7 @@
     <Compile Include="Chapter2\Node.cs" />
     <Compile Include="Chapter2\Q2P1LinkedListRemoveDuplicates.cs" />
     <Compile Include="Chapter2\Q2P2FindKthToLastElementOfLinkedList.cs" />
+    <Compile Include="Chapter2\Q2P3DeleteNodeInMiddleOfLinkedList.cs" />
     <Compile Include="DictionaryEqualityComparer.cs" />
     <Compile Include="PerformanceHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

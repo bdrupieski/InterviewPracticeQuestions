@@ -50,7 +50,7 @@ namespace CrackingTheCodingInterview.Chapter2
         {
             if (Next == null)
             {
-                return Data.ToString();
+                return Data != null ? Data.ToString() : string.Empty;
             }
             else
             {
