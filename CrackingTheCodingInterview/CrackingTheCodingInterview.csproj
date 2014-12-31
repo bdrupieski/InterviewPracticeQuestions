@@ -57,6 +57,7 @@
     <Compile Include="Chapter2\Q2P2FindKthToLastElementOfLinkedList.cs" />
     <Compile Include="Chapter2\Q2P3DeleteNodeInMiddleOfLinkedList.cs" />
     <Compile Include="Chapter2\Q2P4PartitionLinkedList.cs" />
+    <Compile Include="Chapter2\Q2P5AddLinkedLists.cs" />
     <Compile Include="Chapter2\Q2P7IsLinkedListAPalindrome.cs" />
     <Compile Include="DictionaryEqualityComparer.cs" />
     <Compile Include="PerformanceHelper.cs" />
