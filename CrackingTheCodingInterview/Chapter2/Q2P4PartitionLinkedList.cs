@@ -3,6 +3,10 @@ using NUnit.Framework;
 
 namespace CrackingTheCodingInterview.Chapter2
 {
+    /// <summary>
+    /// Write code to partition a linked list around a value x, such that all nodes less than
+    /// x come before all nodes greater than or equal to x.
+    /// </summary>
     public class Q2P4PartitionLinkedList
     {
         public static Node<T> PartitionLinkedList<T>(Node<T> head, T partitionValue) where T : IEquatable<T>, IComparable<T>
