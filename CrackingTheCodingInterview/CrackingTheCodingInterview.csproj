@@ -61,6 +61,7 @@
     <Compile Include="Chapter2\Q2P6FindStartOfCycleInLinkedList.cs" />
     <Compile Include="Chapter2\Q2P7IsLinkedListAPalindrome.cs" />
     <Compile Include="Chapter3\Q3P2StackWithConstantTimeMin.cs" />
+    <Compile Include="Chapter3\Q3P3SetOfStacks.cs" />
     <Compile Include="DictionaryEqualityComparer.cs" />
     <Compile Include="PerformanceHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
