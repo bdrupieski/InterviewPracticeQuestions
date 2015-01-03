@@ -58,6 +58,7 @@
     <Compile Include="Chapter2\Q2P3DeleteNodeInMiddleOfLinkedList.cs" />
     <Compile Include="Chapter2\Q2P4PartitionLinkedList.cs" />
     <Compile Include="Chapter2\Q2P5AddLinkedLists.cs" />
+    <Compile Include="Chapter2\Q2P6FindStartOfCycleInLinkedList.cs" />
     <Compile Include="Chapter2\Q2P7IsLinkedListAPalindrome.cs" />
     <Compile Include="Chapter3\Q3P2StackWithConstantTimeMin.cs" />
     <Compile Include="DictionaryEqualityComparer.cs" />
