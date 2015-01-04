@@ -64,6 +64,7 @@
     <Compile Include="Chapter3\Q3P3SetOfStacks.cs" />
     <Compile Include="Chapter3\Q3P5QueueFromTwoStacks.cs" />
     <Compile Include="Chapter3\Q3P6SortStackWithOneOtherStack.cs" />
+    <Compile Include="Chapter3\Q3P7AnimalShelter.cs" />
     <Compile Include="DictionaryEqualityComparer.cs" />
     <Compile Include="PerformanceHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
