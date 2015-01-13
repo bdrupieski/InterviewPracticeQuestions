@@ -4,11 +4,11 @@ using NUnit.Framework;
 
 namespace CrackingTheCodingInterview.Chapter3
 {
+    /// <summary>
+    /// Implement a MyQueue class which implements a queue using two stacks.
+    /// </summary>
     public class Q3P5QueueFromTwoStacks
     {
-        /// <summary>
-        /// Implement a MyQueue class which implements a queue using two stacks.
-        /// </summary>
         public class MyQueue<T>
         {
             private readonly Stack<T> _queueStack = new Stack<T>();

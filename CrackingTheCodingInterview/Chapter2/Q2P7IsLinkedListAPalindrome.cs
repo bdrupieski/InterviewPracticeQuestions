@@ -5,6 +5,9 @@ using NUnit.Framework;
 
 namespace CrackingTheCodingInterview.Chapter2
 {
+    /// <summary>
+    /// Implement a function to check if a linked list is a palindrome.
+    /// </summary>
     public class Q2P7IsLinkedListAPalindrome
     {
         public static bool IsPalindrome<T>(Node<T> head) where T : IEquatable<T>
