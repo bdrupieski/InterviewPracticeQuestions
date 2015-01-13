@@ -62,6 +62,7 @@
     <Compile Include="Chapter2\Q2P7IsLinkedListAPalindrome.cs" />
     <Compile Include="Chapter3\Q3P2StackWithConstantTimeMin.cs" />
     <Compile Include="Chapter3\Q3P3SetOfStacks.cs" />
+    <Compile Include="Chapter3\Q3P4TowersOfHanoi.cs" />
     <Compile Include="Chapter3\Q3P5QueueFromTwoStacks.cs" />
     <Compile Include="Chapter3\Q3P6SortStackWithOneOtherStack.cs" />
     <Compile Include="Chapter3\Q3P7AnimalShelter.cs" />
