@@ -66,6 +66,8 @@
     <Compile Include="Chapter3\Q3P5QueueFromTwoStacks.cs" />
     <Compile Include="Chapter3\Q3P6SortStackWithOneOtherStack.cs" />
     <Compile Include="Chapter3\Q3P7AnimalShelter.cs" />
+    <Compile Include="Chapter4\BinaryTreeNode.cs" />
+    <Compile Include="Chapter4\Q4P1IsBinaryTreeBalanced.cs" />
     <Compile Include="DictionaryEqualityComparer.cs" />
     <Compile Include="PerformanceHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
