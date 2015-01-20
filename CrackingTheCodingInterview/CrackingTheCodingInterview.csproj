@@ -70,6 +70,7 @@
     <Compile Include="Chapter4\GraphNode.cs" />
     <Compile Include="Chapter4\Q4P1IsBinaryTreeBalanced.cs" />
     <Compile Include="Chapter4\Q4P2RouteBetweenGraphNodes.cs" />
+    <Compile Include="Chapter4\Q4P3MinimalHeightBinarySearchTree.cs" />
     <Compile Include="DictionaryEqualityComparer.cs" />
     <Compile Include="PerformanceHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

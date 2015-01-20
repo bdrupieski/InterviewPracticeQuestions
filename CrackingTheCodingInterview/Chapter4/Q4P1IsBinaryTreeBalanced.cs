@@ -12,18 +12,18 @@ namespace CrackingTheCodingInterview.Chapter4
     {
         public static bool IsBalanced<T>(BinaryTreeNode<T> root)
         {
-            return HeightOfSubtree(root) != -1;
+            return GetHeightOfTree(root) != -1;
         }
 
-        private static int HeightOfSubtree<T>(BinaryTreeNode<T> root)
+        public static int GetHeightOfTree<T>(BinaryTreeNode<T> root)
         {
             if (root == null)
             {
                 return 0;
             }
 
-            int leftHeight = HeightOfSubtree(root.Left);
-            int rightHeight = HeightOfSubtree(root.Right);
+            int leftHeight = GetHeightOfTree(root.Left);
+            int rightHeight = GetHeightOfTree(root.Right);
 
             if (leftHeight == -1 || rightHeight == -1 || Math.Abs(leftHeight - rightHeight) > 1)
             {
