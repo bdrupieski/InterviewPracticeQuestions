@@ -3,6 +3,10 @@ using NUnit.Framework;
 
 namespace CrackingTheCodingInterview.Chapter4
 {
+    /// <summary>
+    /// Given a sorted (increasing order) array with unique integer elements, write an
+    /// algorithm to create a binary search tree with minimal height.
+    /// </summary>
     public class Q4P3MinimalHeightBinarySearchTree
     {
         public static BinaryTreeNode<int> CreateMinimalHeightBinarySearchTree(int[] values)
