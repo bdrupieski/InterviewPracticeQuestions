@@ -17,16 +17,16 @@ namespace CrackingTheCodingInterview.Chapter4
         {
             Console.WriteLine(prefix + (isTail ? "└── " : "├── ") + Data);
 
-            var end = Right ?? Left;
-
-            if (Left != null)
-            {
-                Left.Print(prefix + (isTail ? "    " : "│   "), Left == end);
-            }
+            var end = Left ?? Right;
 
             if (Right != null)
             {
                 Right.Print(prefix + (isTail ? "    " : "│   "), Right == end);
+            }
+
+            if (Left != null)
+            {
+                Left.Print(prefix + (isTail ? "    " : "│   "), Left == end);
             }
         }
 
