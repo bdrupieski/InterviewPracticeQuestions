@@ -73,6 +73,7 @@
     <Compile Include="Chapter4\Q4P2RouteBetweenGraphNodes.cs" />
     <Compile Include="Chapter4\Q4P3MinimalHeightBinarySearchTree.cs" />
     <Compile Include="Chapter4\Q4P4TreeDepthList.cs" />
+    <Compile Include="Chapter4\Q4P7TreeCommonAncestor.cs" />
     <Compile Include="DictionaryEqualityComparer.cs" />
     <Compile Include="PerformanceHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

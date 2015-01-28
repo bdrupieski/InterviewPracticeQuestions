@@ -29,5 +29,10 @@ namespace CrackingTheCodingInterview.Chapter4
                 Right.Print(prefix + (isTail ? "    " : "│   "), Right == end);
             }
         }
+
+        public override string ToString()
+        {
+            return Data.ToString();
+        }
     }
 }
