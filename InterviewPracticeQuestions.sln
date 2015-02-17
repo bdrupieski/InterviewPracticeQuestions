@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingForInterviews", "Codi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrackingTheCodingInterview", "CrackingTheCodingInterview\CrackingTheCodingInterview.csproj", "{EE398E0B-4774-4D66-B7C1-4E963EE43F37}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomlyEncounteredQuestions", "RandomlyEncounteredQuestions\RandomlyEncounteredQuestions.csproj", "{14BA4A4F-4A00-4EB7-BAC9-B0A2BE5EFD1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EE398E0B-4774-4D66-B7C1-4E963EE43F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE398E0B-4774-4D66-B7C1-4E963EE43F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE398E0B-4774-4D66-B7C1-4E963EE43F37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14BA4A4F-4A00-4EB7-BAC9-B0A2BE5EFD1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14BA4A4F-4A00-4EB7-BAC9-B0A2BE5EFD1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14BA4A4F-4A00-4EB7-BAC9-B0A2BE5EFD1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14BA4A4F-4A00-4EB7-BAC9-B0A2BE5EFD1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
