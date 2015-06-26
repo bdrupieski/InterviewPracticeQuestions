@@ -80,8 +80,8 @@ namespace CodingForInterviews
                 Close = close;
             }
 
-            public char Open { get; private set; }
-            public char Close { get; private set; }
+            public char Open { get; }
+            public char Close { get; }
         }
 
         [TestFixture]

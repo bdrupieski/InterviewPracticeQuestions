@@ -54,7 +54,7 @@ namespace CrackingTheCodingInterview.Chapter4
 
                 if (graph.Count == 1)
                 {
-                    sb.AppendLine(string.Format("{0};", connectedComponents.First().Name));
+                    sb.AppendLine($"{connectedComponents.First().Name};");
                 }
                 else
                 {
@@ -107,7 +107,7 @@ namespace CrackingTheCodingInterview.Chapter4
 
                 foreach (var graphNode in start.Nodes)
                 {
-                    sb.AppendLine(string.Format("{0} -> {1};", start.Name, graphNode.Name));
+                    sb.AppendLine($"{start.Name} -> {graphNode.Name};");
                     BuildDotRepresentation(graphNode, sb, visitedNodes); 
                 }
             }

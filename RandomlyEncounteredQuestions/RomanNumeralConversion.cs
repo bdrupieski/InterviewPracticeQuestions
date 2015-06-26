@@ -13,19 +13,19 @@ namespace RandomlyEncounteredQuestions
     /// </summary>
     public class FunkyRomanNumerals : RomanNumerals
     {
-        protected override string Fifty { get { return "B"; } }
-        protected override string Thousand { get { return "P"; } }
+        protected override string Fifty => "B";
+        protected override string Thousand => "P";
     }
 
     public class RomanNumerals
     {
-        protected virtual string One { get { return "I"; } }
-        protected virtual string Five { get { return "V"; } }
-        protected virtual string Ten { get { return "X"; } }
-        protected virtual string Fifty { get { return "L"; } }
-        protected virtual string Hundred { get { return "C"; } }
-        protected virtual string FiveHundred { get { return "D"; } }
-        protected virtual string Thousand { get { return "M"; } }
+        protected virtual string One => "I";
+        protected virtual string Five => "V";
+        protected virtual string Ten => "X";
+        protected virtual string Fifty => "L";
+        protected virtual string Hundred => "C";
+        protected virtual string FiveHundred => "D";
+        protected virtual string Thousand => "M";
 
         private readonly Dictionary<int, Dictionary<int, string>> _numberToNumeralMaps;
         private readonly Dictionary<string, int> _numeralToNumberMap;

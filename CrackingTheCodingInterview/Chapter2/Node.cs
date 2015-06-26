@@ -54,7 +54,7 @@ namespace CrackingTheCodingInterview.Chapter2
             }
             else
             {
-                return string.Format("{0} {1}", Data, Next);
+                return $"{Data} {Next}";
             }
         }
     }

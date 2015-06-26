@@ -193,7 +193,7 @@ namespace CodingForInterviews
                 Data = data;
             }
 
-            public TData Data { get; private set; }
+            public TData Data { get; }
 
             public Node<TData> Left { get; set; }
             public Node<TData> Right { get; set; }

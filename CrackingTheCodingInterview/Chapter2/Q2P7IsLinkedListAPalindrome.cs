@@ -51,7 +51,7 @@ namespace CrackingTheCodingInterview.Chapter2
 
             var firstHalfItems = new Stack<T>();
 
-            while (fast != null && fast.Next != null)
+            while (fast?.Next != null)
             {
                 firstHalfItems.Push(slow.Data);
                 slow = slow.Next;

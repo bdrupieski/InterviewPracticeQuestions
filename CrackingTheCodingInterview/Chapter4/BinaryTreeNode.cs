@@ -19,15 +19,8 @@ namespace CrackingTheCodingInterview.Chapter4
 
             var end = Left ?? Right;
 
-            if (Right != null)
-            {
-                Right.Print(prefix + (isTail ? "    " : "│   "), Right == end);
-            }
-
-            if (Left != null)
-            {
-                Left.Print(prefix + (isTail ? "    " : "│   "), Left == end);
-            }
+            Right?.Print(prefix + (isTail ? "    " : "│   "), Right == end);
+            Left?.Print(prefix + (isTail ? "    " : "│   "), Left == end);
         }
 
         public override string ToString()
