@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace CrackingTheCodingInterview
+namespace Common
 {
     public static class TypeExtensions
     {

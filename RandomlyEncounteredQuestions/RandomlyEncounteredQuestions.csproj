@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddWithoutUsingAdditionOperator.cs" />
     <Compile Include="CallTwiceReturnsNegative.cs" />
     <Compile Include="FirstTenEvenFibonacci.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -49,6 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{d2c4ca3e-0fde-4d4e-9a66-832f0297f3bf}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

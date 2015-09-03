@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CrackingTheCodingInterview
+namespace Common
 {
     public static class QueueExtensions
     {

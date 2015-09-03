@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Common;
 using NUnit.Framework;
 
 namespace CrackingTheCodingInterview.Chapter3

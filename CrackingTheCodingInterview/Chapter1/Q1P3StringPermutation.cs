@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Common;
 using NUnit.Framework;
 
 namespace CrackingTheCodingInterview.Chapter1

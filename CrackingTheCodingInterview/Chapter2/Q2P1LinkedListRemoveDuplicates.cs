@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
+using Common;
 using NUnit.Framework;
 
 namespace CrackingTheCodingInterview.Chapter2

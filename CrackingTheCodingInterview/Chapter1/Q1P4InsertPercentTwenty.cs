@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Reflection;
+using Common;
 using NUnit.Framework;
 
 namespace CrackingTheCodingInterview.Chapter1
