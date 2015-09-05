@@ -20,6 +20,17 @@ namespace Common
             PerformanceTest(methods, methodArgs);
         }
 
+        public static void PerformanceTestAction(Action action, string description)
+        {
+            var sw = Stopwatch.StartNew();
+            for (int i = 0; i < 1000000; i++)
+            {
+                action();
+            }
+            sw.Stop();
+            Console.WriteLine("{0} ms for {1}", sw.ElapsedMilliseconds, description);
+        }
+
         private static void PerformanceTest(IEnumerable<MethodInfo> methods, object[] methodArgs)
         {
             foreach (var m in methods)
