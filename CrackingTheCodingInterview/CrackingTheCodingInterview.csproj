@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Chapter18\Q18P1AddWithoutArithmetic.cs" />
     <Compile Include="Chapter18\Q18P2PerfectCardShuffle.cs" />
+    <Compile Include="Chapter18\Q18P8SearchForSubstrings.cs" />
     <Compile Include="Chapter1\Q1P1UniqueCharactersInString.cs" />
     <Compile Include="Chapter1\Q1P3StringPermutation.cs" />
     <Compile Include="Chapter1\Q1P4InsertPercentTwenty.cs" />
