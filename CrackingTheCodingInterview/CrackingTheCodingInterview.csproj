@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chapter18\Q18P1AddWithoutArithmetic.cs" />
     <Compile Include="Chapter1\Q1P1UniqueCharactersInString.cs" />
     <Compile Include="Chapter1\Q1P3StringPermutation.cs" />
     <Compile Include="Chapter1\Q1P4InsertPercentTwenty.cs" />
@@ -87,6 +88,7 @@
       <Name>Common</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
