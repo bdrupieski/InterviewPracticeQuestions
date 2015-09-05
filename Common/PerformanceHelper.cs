@@ -20,10 +20,10 @@ namespace Common
             PerformanceTest(methods, methodArgs);
         }
 
-        public static void PerformanceTestAction(Action action, string description)
+        public static void PerformanceTestAction(Action action, string description, int numTimes = 1000000)
         {
             var sw = Stopwatch.StartNew();
-            for (int i = 0; i < 1000000; i++)
+            for (int i = 0; i < numTimes; i++)
             {
                 action();
             }
