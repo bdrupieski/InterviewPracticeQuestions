@@ -38,5 +38,25 @@ namespace CrackingTheCodingInterview.Chapter18
             Assert.AreEqual(Add(1, int.MaxValue - 1), int.MaxValue);
             Assert.AreEqual(Add(int.MaxValue / 2, int.MaxValue / 2), int.MaxValue - 1);
         }
+
+        [Test]
+        public void AddWithoutArithmeticTestNegatives()
+        {
+            Assert.AreEqual(Add(0, 0), 0);
+            Assert.AreEqual(Add(0, -1), -1);
+            Assert.AreEqual(Add(-1, 0), -1);
+            Assert.AreEqual(Add(-1, -1), -2);
+            Assert.AreEqual(Add(-1, -3), -4);
+            Assert.AreEqual(Add(-3, -1), -4);
+            Assert.AreEqual(Add(-17, -3), -20);
+            Assert.AreEqual(Add(-3, -17), -20);
+            Assert.AreEqual(Add(-245, -1), -246);
+            Assert.AreEqual(Add(-1, -245), -246);
+            Assert.AreEqual(Add(-1024, -1024), -2048);
+            Assert.AreEqual(Add(-123456789, -123456789), -246913578);
+            Assert.AreEqual(Add(int.MinValue + 1, -1), int.MinValue);
+            Assert.AreEqual(Add(-1, int.MinValue + 1), int.MinValue);
+            Assert.AreEqual(Add(int.MinValue / 2, int.MinValue / 2), int.MinValue);
+        }
     }
 }
