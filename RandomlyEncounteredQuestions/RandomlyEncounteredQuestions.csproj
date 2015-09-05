@@ -44,7 +44,7 @@
   <ItemGroup>
     <Compile Include="AddWithoutUsingAdditionOperator.cs" />
     <Compile Include="CallTwiceReturnsNegative.cs" />
-    <Compile Include="FirstTenEvenFibonacci.cs" />
+    <Compile Include="Fibonacci.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RomanNumeralConversion.cs" />
   </ItemGroup>
