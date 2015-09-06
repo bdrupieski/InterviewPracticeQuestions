@@ -50,6 +50,7 @@
     <Compile Include="CallTwiceReturnsNegative.cs" />
     <Compile Include="Fibonacci.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rand7UsingRand5.cs" />
     <Compile Include="RomanNumeralConversion.cs" />
   </ItemGroup>
   <ItemGroup>

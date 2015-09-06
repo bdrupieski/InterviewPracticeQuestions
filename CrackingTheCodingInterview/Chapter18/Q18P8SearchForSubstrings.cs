@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Common;
 using NUnit.Framework;
@@ -99,14 +98,7 @@ namespace CrackingTheCodingInterview.Chapter18
 
             public bool AllExistAsSubstrings(IEnumerable<string> t)
             {
-                foreach (var x in t)
-                {
-                    if (!_allSubstringHashes.Contains(x.GetHashCode()))
-                    {
-                        return false;
-                    }
-                }
-                return true;
+                return t.All(x => _allSubstringHashes.Contains(x.GetHashCode()));
             }
         }
 
