@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chapter17\Q17P11Rand7UsingRand5.cs" />
     <Compile Include="Chapter18\Q18P1AddWithoutArithmetic.cs" />
     <Compile Include="Chapter18\Q18P2PerfectCardShuffle.cs" />
     <Compile Include="Chapter18\Q18P8SearchForSubstrings.cs" />
