@@ -51,7 +51,6 @@
     <Compile Include="EnumerableExtensions.cs" />
     <Compile Include="IntegerExtensions.cs" />
     <Compile Include="LevelOrderTreePrint.cs" />
-    <Compile Include="MaxContiguousSum.cs" />
     <Compile Include="NQueens.cs" />
     <Compile Include="OutwardCounterclockwiseSpiralMatrixTraversal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
