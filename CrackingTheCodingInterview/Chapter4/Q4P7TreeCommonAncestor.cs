@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Common.BinaryTree;
+using NUnit.Framework;
 
 namespace CrackingTheCodingInterview.Chapter4
 {

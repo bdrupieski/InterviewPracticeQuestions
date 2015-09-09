@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CrackingTheCodingInterview.Chapter4
+namespace Common.BinaryTree
 {
     public class BinaryTreeNode<T>
     {

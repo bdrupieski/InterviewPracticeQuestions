@@ -52,6 +52,7 @@
     <Compile Include="PascalsTriangle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RomanNumeralConversion.cs" />
+    <Compile Include="TreeTraversal.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinaryTree\BinaryTree.cs" />
+    <Compile Include="BinaryTree\BinaryTreeNode.cs" />
     <Compile Include="ListExtensions.cs" />
     <Compile Include="PerformanceHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

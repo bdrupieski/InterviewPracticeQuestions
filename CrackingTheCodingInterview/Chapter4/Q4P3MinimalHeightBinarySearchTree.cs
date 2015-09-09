@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using Common.BinaryTree;
 using NUnit.Framework;
 
 namespace CrackingTheCodingInterview.Chapter4

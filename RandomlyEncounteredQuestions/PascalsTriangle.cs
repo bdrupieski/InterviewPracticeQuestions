@@ -38,7 +38,7 @@ namespace RandomlyEncounteredQuestions
                 new[] { 1, 6, 15, 20, 15, 6, 1 },
             };
 
-            CollectionAssert.AreEqual(p, t);
+            CollectionAssert.AreEqual(t, p);
         }
     }
 }
