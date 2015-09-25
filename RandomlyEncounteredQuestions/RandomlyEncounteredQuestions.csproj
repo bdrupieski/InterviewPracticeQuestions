@@ -54,6 +54,7 @@
     <Compile Include="RomanNumeralConversion.cs" />
     <Compile Include="Sorting.cs" />
     <Compile Include="TreeTraversal.cs" />
+    <Compile Include="WaterFillingValleysInAnArray.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
