@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using Common;
@@ -42,59 +41,38 @@ namespace RandomlyEncounteredQuestions
             return volume;
         }
 
-        // My O(nlogn)ish confusing solution
-        public static int GetVolumeInefficiently2(int[] arr)
+        // O(2n)
+        public static int GetVolumeTwoPasses(int[] arr)
         {
-            int maxHeight = int.MinValue;
-            int maxIndex = int.MinValue;
+            int[] maximumHeightFoundToRightOfIndex = new int[arr.Length];
+            int max = int.MinValue;
+            for (int i = arr.Length - 1; i >= 0; i--)
+            {
+                if (arr[i] > max)
+                {
+                    max = arr[i];
+                }
 
+                maximumHeightFoundToRightOfIndex[i] = max;
+            }
+
+            int maxHeightScanningFromLeft = int.MinValue;
+            int volume = 0;
             for (int i = 0; i < arr.Length; i++)
             {
-                if (arr[i] > maxHeight)
+                if (arr[i] > maxHeightScanningFromLeft)
                 {
-                    maxHeight = arr[i];
-                    maxIndex = i;
+                    maxHeightScanningFromLeft = arr[i];
+                }
+
+                int localPeak = Math.Min(maxHeightScanningFromLeft, maximumHeightFoundToRightOfIndex[i]);
+
+                if (arr[i] < localPeak)
+                {
+                    volume += localPeak - arr[i];
                 }
             }
 
-            int volume = 0;
-
-            var heightsRightOfMax = new Stack<int>(arr.Skip(maxIndex + 1).OrderBy(x => x));
-            if (heightsRightOfMax.Any())
-            {
-                int nextHeightRight = heightsRightOfMax.Pop();
-                for (int i = maxIndex + 1; i < arr.Length; i++)
-                {
-                    if (arr[i] < nextHeightRight)
-                    {
-                        volume += nextHeightRight - arr[i];
-                    }
-
-                    if (arr[i] == nextHeightRight && heightsRightOfMax.Any())
-                    {
-                        nextHeightRight = heightsRightOfMax.Pop();
-                    }
-                }
-            }
-
-            var heightsLeftOfMax = new Stack<int>(arr.Take(maxIndex).OrderBy(x => x));
-            if (heightsLeftOfMax.Any())
-            {
-                int nextHeightLeft = heightsLeftOfMax.Pop();
-                for (int i = maxIndex; i > 0; i--)
-                {
-                    if (arr[i] < nextHeightLeft)
-                    {
-                        volume += nextHeightLeft - arr[i];
-                    }
-
-                    if (arr[i] == nextHeightLeft && heightsLeftOfMax.Any())
-                    {
-                        nextHeightLeft = heightsLeftOfMax.Pop();
-                    }
-                }
-            }
-           
             return volume;
         }
 
@@ -151,12 +129,22 @@ namespace RandomlyEncounteredQuestions
             foreach (var m in typeof(WaterFillingValleysInAnArray).PublicStaticMethods())
             {
                 Assert.AreEqual(17, m.GetVolume(new[] { 2, 5, 1, 3, 1, 2, 1, 7, 7, 6 }));
-                Assert.AreEqual(0, m.GetVolume(new[] { 1, 2, 1 }));
+                Assert.AreEqual(17, m.GetVolume(new[] { 6, 7, 7, 1, 2, 1, 3, 1, 5, 2 }));
 
+                Assert.AreEqual(0, m.GetVolume(new[] { 1, 2, 1 }));
                 Assert.AreEqual(1, m.GetVolume(new[] { 2, 1, 2 }));
-               
+
+                Assert.AreEqual(0, m.GetVolume(new[] { 0, 0, 0 }));
+                Assert.AreEqual(0, m.GetVolume(new[] { 5, 5, 5 }));
+
+                Assert.AreEqual(0, m.GetVolume(new[] { 0 }));
+                Assert.AreEqual(0, m.GetVolume(new[] { 5 }));
+
                 Assert.AreEqual(2, m.GetVolume(new[] { 5, 4, 4, 5 }));
                 Assert.AreEqual(3, m.GetVolume(new[] { 1, 0, 0, 0, 1 }));
+                Assert.AreEqual(3, m.GetVolume(new[] { 0, 1, 0, 0, 0, 1, 0 }));
+                Assert.AreEqual(3, m.GetVolume(new[] { 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 }));
+                Assert.AreEqual(0, m.GetVolume(new[] { 0, 0, 0, 1, 0, 0, 0 }));
 
                 Assert.AreEqual(2, m.GetVolume(new[] { 1, 0, 1, 0, 1 }));
                 Assert.AreEqual(5, m.GetVolume(new[] { 2, 0, 1, 0, 2 }));
