@@ -142,6 +142,8 @@ namespace RandomlyEncounteredQuestions
                 (100, new[] { 10, 5, 30, 0, 50, 100, 10, 5, 30 }),
                 (100, new[] { 0, 90, 10, 80, 20, 100 }),
                 (80, new[] { 50, 20, 40, 70, 100, 40 }),
+                (10, new[] { 0, 0, 0, 10 }),
+                (10, new[] { 0, 10, 0, 0 }),
             };
 
             foreach (var (bestAmount, prices) in bestAmountAndPrices)
