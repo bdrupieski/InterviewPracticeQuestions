@@ -129,6 +129,29 @@ namespace RandomlyEncounteredQuestions
             return bestProfit;
         }
 
+        /// <summary>
+        /// Only one pass through the array.
+        ///
+        /// Ugghh this is so simple, why couldn't I think of this first.
+        /// What was I hung up on?
+        /// </summary>
+        public static int BestTradeAmountLinear3(int[] prices)
+        {
+            int lowestPriceFoundSoFar = prices[0]; // length should be validated >= 1
+            int bestAmountFoundSoFar = 0;
+
+            foreach (var currentPrice in prices)
+            {
+                lowestPriceFoundSoFar = Math.Min(lowestPriceFoundSoFar, currentPrice);
+
+                var currentTradeAmount = currentPrice - lowestPriceFoundSoFar;
+
+                bestAmountFoundSoFar = Math.Max(bestAmountFoundSoFar, currentTradeAmount);
+            }
+
+            return bestAmountFoundSoFar;
+        }
+
         [Test]
         public void StockPriceBestProfitTest()
         {
@@ -151,6 +174,7 @@ namespace RandomlyEncounteredQuestions
                 Assert.AreEqual(bestAmount, BestTradeAmountNSquared(prices));
                 Assert.AreEqual(bestAmount, BestTradeAmountLinear(prices));
                 Assert.AreEqual(bestAmount, BestTradeAmountLinear2(prices));
+                Assert.AreEqual(bestAmount, BestTradeAmountLinear3(prices));
             }
         }
     }
