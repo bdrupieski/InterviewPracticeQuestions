@@ -37,9 +37,37 @@ namespace RandomlyEncounteredQuestions
         }
 
         /// <summary>
-        /// 3 passes through the array, but could be cut down to 2 since
-        /// we don't really need to build the lowestFromLeft array and
-        /// can combine it with the last pass.
+        /// This works by using two additional arrays to track
+        /// 1. the lowest possible price we've seen in the past at a given index (inclusive of the present), and
+        /// 2. the highest possible price we'll see in the future from a given index (inclusive of the present).
+        ///
+        /// This is what the lowest and highest prices would look
+        /// like for a sample set of prices:
+        /// 
+        /// prices { 50,  20,  40,  70,  100, 40 }
+        ///
+        /// low    { 50,  20,  20,  20,  20,  20 }
+        ///        ---------→
+        ///
+        /// high   { 100, 100, 100, 100, 100, 40 }
+        ///                             ←---------
+        ///
+        /// For the "low" array, it changes to 20 at index 1 because 20 is
+        /// less than 50 so that makes it the lowest value we've seen so far.
+        /// It stays at 20 for the rest of the array because that remains the lowest
+        /// value we encounter when iterating from the left.
+        ///
+        /// For the "high" array, it's 40 at the end because at that last
+        /// index that's the highest price we'll see from then on into the future.
+        /// Then working backward, it changes to 100 at index 4 and stays 100
+        /// back to the start of the array, because at each of those positions
+        /// 100 is the highest price we'll encounter in the future.
+        ///
+        /// This iterates over the array 3 times, but it could be cut down
+        /// to 2 since we don't actually need to build the lowestFromLeft array.
+        /// When using the two arrays in the last loop, we can get the
+        /// information the lowestFromLeft array is giving us directly
+        /// from the prices array.
         /// </summary>
         public static int BestTradeAmountLinear(int[] prices)
         {
